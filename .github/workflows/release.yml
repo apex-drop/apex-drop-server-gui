@@ -17,31 +17,25 @@ jobs:
       - name: Check out Git repository
         uses: actions/checkout@v3
 
-      - name: Install PNPM
-        uses: pnpm/action-setup@v2
-        with:
-          version: latest
-
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 'lts/*'
-          cache: "pnpm"
 
       - name: Install Dependencies
-        run: pnpm install
+        run: npm install
 
       - name: build-linux
         if: matrix.os == 'ubuntu-latest'
-        run: pnpm run build:linux
+        run: npm run build:linux
 
       - name: build-mac
         if: matrix.os == 'macos-latest'
-        run: pnpm run build:mac
+        run: npm run build:mac
 
       - name: build-win
         if: matrix.os == 'windows-latest'
-        run: pnpm run build:win
+        run: npm run build:win
 
       - name: release
         uses: softprops/action-gh-release@v1
