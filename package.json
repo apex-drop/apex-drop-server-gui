@@ -1,5 +1,5 @@
 {
-  "name": "apex-drop-server-gui",
+  "name": "apex-drop-server",
   "version": "0.0.1",
   "description": "An Electron application with React",
   "main": "./out/main/index.js",
