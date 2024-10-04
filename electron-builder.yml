@@ -31,7 +31,7 @@ linux:
   target:
     - AppImage
     - deb
-  maintainer: electronjs.org
+  maintainer: apexdrop.com.ng
   category: Utility
 appImage:
   artifactName: ${name}-${version}.${ext}
