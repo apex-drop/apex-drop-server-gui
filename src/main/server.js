@@ -18,9 +18,9 @@ export function startSyncServer() {
 }
 
 /** Close Server */
-export function stopSyncServer() {
+export async function stopSyncServer() {
   if (sync) {
-    sync.server.close()
+    await sync.io.close()
     sync = null
   }
 }
