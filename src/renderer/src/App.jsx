@@ -13,7 +13,7 @@ function ContactLink(props) {
       target="_blank"
       rel="noreferrer"
       className={cn(
-        'px-2 py-1 text-sm text-white rounded-lg bg-neutral-700 hover:bg-blue-500',
+        'px-2 py-1 text-white rounded-lg bg-neutral-700 hover:bg-blue-500',
         props.className
       )}
     />
@@ -76,7 +76,7 @@ function App() {
             <>
               <img src={AppIcon} className="w-28 h-28" />
 
-              <h1 className="font-bold">Apex Drop</h1>
+              <h1 className="text-lg font-bold">Apex Drop</h1>
 
               {/* Toggle Button */}
               <button
@@ -102,7 +102,7 @@ function App() {
               ) : null}
 
               {/* Connect */}
-              <div className="flex items-center justify-center gap-2 py-4">
+              <div className="flex items-center justify-center gap-1 py-4">
                 <ContactLink href="https://apexdrop.com.ng">Website</ContactLink>
                 <ContactLink href="https://wa.me/2349018646163">Dev</ContactLink>
                 <ContactLink href="https://t.me/Apex_Drop">Channel</ContactLink>
