@@ -1,5 +1,5 @@
-appId: com.electron.app
-productName: apex-drop-server
+appId: com.apex-drop.server
+productName: Apex Drop Server
 directories:
   buildResources: build
 files:
