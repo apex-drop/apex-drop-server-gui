@@ -25,6 +25,10 @@ function App() {
   const [addresses, setAddresses] = useState(null)
 
   const handleStartServer = useCallback(() => {
+    /** Close Previous Toast */
+    toast.dismiss()
+
+    /** Create Toast */
     toast.promise(
       window.api.startServer().then((addresses) => {
         setIsRunning(true)
@@ -39,6 +43,10 @@ function App() {
   }, [setAddresses, setIsRunning])
 
   const handleStopServer = useCallback(() => {
+    /** Close Previous Toast */
+    toast.dismiss()
+
+    /** Create Toast */
     toast.promise(
       window.api.stopServer().then(() => {
         setAddresses(null)
